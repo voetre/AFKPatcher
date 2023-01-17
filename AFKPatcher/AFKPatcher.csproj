@@ -12,6 +12,7 @@
   <PropertyGroup>
     <TargetFramework>net7.0-windows</TargetFramework>
     <Platforms>x64</Platforms>
+    <OutputPath>bin\$(Configuration)</OutputPath>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
