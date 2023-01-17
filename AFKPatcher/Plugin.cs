@@ -11,7 +11,7 @@ namespace AFKPatcher
     public sealed class Plugin : IDalamudPlugin
     {
         public string Name => "AFK Patcher";
-        private const string CommandName = "/pmycommand";
+        private const string CommandName = "/afkconfig";
 
         private DalamudPluginInterface PluginInterface { get; init; }
         private CommandManager CommandManager { get; init; }
@@ -30,29 +30,31 @@ namespace AFKPatcher
 
             DalamudApi.Initialize(this, pluginInterface);
 
-            // you might normally want to embed resources and load them from the manifest stream
 
             WindowSystem.AddWindow(new ConfigWindow(this));
-            WindowSystem.AddWindow(new MainWindow(this));
 
             this.CommandManager.AddHandler(CommandName, new CommandInfo(OnCommand)
             {
-                HelpMessage = "A useful message to display in /xlhelp"
+                HelpMessage = "Plugin to patch the afk kickers/timers."
             });
-
             this.PluginInterface.UiBuilder.Draw += DrawUI;
             this.PluginInterface.UiBuilder.OpenConfigUi += DrawConfigUI;
+
+            if (AFKPatcherConfig.InstanceKickerBool) { ConfigWindow.InstanceKickerPatch.Enable(); }
+            if (AFKPatcherConfig.NoviceNetKickerBool) { ConfigWindow.NoviceNetKickerPatch.Enable(); }
+
         }
 
         public void Dispose()
         {
             this.WindowSystem.RemoveAllWindows();
             this.CommandManager.RemoveHandler(CommandName);
+            Memory.Dispose();
         }
 
         private void OnCommand(string command, string args)
         {
-            WindowSystem.GetWindow("A Wonderful AFKPatcherConfig Window").IsOpen = true;
+            WindowSystem.GetWindow("AFK Patcher Config").IsOpen = true;
         }
 
         private void DrawUI()
@@ -62,7 +64,7 @@ namespace AFKPatcher
 
         public void DrawConfigUI()
         {
-            WindowSystem.GetWindow("A Wonderful AFKPatcherConfig Window").IsOpen = true;
+            WindowSystem.GetWindow("AFK Patcher Config").IsOpen = true;
         }
     }
 }

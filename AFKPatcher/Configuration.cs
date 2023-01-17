@@ -1,4 +1,4 @@
-﻿using Dalamud.AFKPatcherConfig;
+using Dalamud.Configuration;
 using Dalamud.Plugin;
 using System;
 
@@ -9,7 +9,8 @@ namespace AFKPatcher
     {
         public int Version { get; set; } = 0;
 
-        public bool SomePropertyToBeSavedAndWithADefault { get; set; } = true;
+        public bool InstanceKickerBool;
+        public bool NoviceNetKickerBool;
 
         // the below exist just to make saving less cumbersome
         [NonSerialized]
