@@ -11,7 +11,7 @@ on:
 env:
   PUBLIC_NAME: AFKPatcher
   SOLUTION_NAME: AFKPatcher
-  INTERNAL_NAME: FFLogsViewer
+  INTERNAL_NAME: AFKPatcher
   RELEASE_DIR: AFKPatcher\bin\Release\AFKPatcher
   PERSONAL_PLUGIN_REPO: voetre/MyDalamudPlugins
   DOTNET_CLI_TELEMETRY_OPTOUT: true
