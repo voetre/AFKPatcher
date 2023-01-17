@@ -3,8 +3,8 @@
   <PropertyGroup>
     <Authors></Authors>
     <Company></Company>
-    <Version>0.0.0.1</Version>
-    <Description>A AFK Patcher.</Description>
+      <Version>1.0.0</Version>
+    <Description>An AFK Patcher.</Description>
     <Copyright></Copyright>
     <PackageProjectUrl>https://github.com/goatcorp/AFKPatcher</PackageProjectUrl>
   </PropertyGroup>
@@ -19,13 +19,6 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="..\Data\goat.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Visible>false</Visible>
-    </Content>
-  </ItemGroup>
 
   <PropertyGroup>
     <DalamudLibPath>$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
