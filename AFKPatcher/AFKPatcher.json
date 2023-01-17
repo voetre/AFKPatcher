@@ -1,13 +1,13 @@
 {
-  "Author": "your name here",
+  "Author": "voetre",
   "Name": "AFK Patcher",
-  "Punchline": "A short one-liner that shows up in /xlplugins.",
-  "Description": "A description that shows up in /xlplugins. List any major slash-command(s).",
+  "Punchline": "AFK Timer patcher.",
+  "Description": "Patch the AFK timers so you no longer get kicked from duties or the Novice Network.",
   "InternalName": "AFKPatcher",
   "ApplicableVersion": "any",
   "Tags": [
-    "sample",
-    "plugin",
-    "goats"
+    "AFK",
+    "Instance",
+    "Timer"
   ]
 }
