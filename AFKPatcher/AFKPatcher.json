@@ -1,13 +1,14 @@
 {
-  "Author": "voetre",
-  "Name": "AFK Patcher",
-  "Punchline": "AFK Timer patcher.",
-  "Description": "Patch the AFK timers so you no longer get kicked from duties or the Novice Network.",
-  "InternalName": "AFKPatcher",
-  "ApplicableVersion": "any",
-  "Tags": [
-    "AFK",
-    "Instance",
-    "Timer"
-  ]
+    "Author": "voetre",
+    "Name": "AFK Patcher",
+    "Punchline": "AFK Timer patcher.",
+    "Description": "Patch the AFK timers so you no longer get kicked from duties or the Novice Network.",
+    "IconUrl": "https://raw.githubusercontent.com/voetre/AFKPatcher/master/AFKPatcherIcon.png",
+    "InternalName": "AFKPatcher",
+    "ApplicableVersion": "any",
+    "Tags": [
+        "AFK",
+        "Instance",
+        "Timer"
+    ]
 }
