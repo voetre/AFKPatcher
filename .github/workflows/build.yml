@@ -9,11 +9,11 @@ on:
     - master
 
 env:
-  PUBLIC_NAME: FFLogsViewer
-  SOLUTION_NAME: FFLogsViewer
+  PUBLIC_NAME: AFKPatcher
+  SOLUTION_NAME: AFKPatcher
   INTERNAL_NAME: FFLogsViewer
-  RELEASE_DIR: FFLogsViewer\bin\Release\FFLogsViewer
-  PERSONAL_PLUGIN_REPO: Aireil/MyDalamudPlugins
+  RELEASE_DIR: AFKPatcher\bin\Release\AFKPatcher
+  PERSONAL_PLUGIN_REPO: voetre/MyDalamudPlugins
   DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 jobs:
