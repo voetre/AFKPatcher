@@ -1,11 +1,11 @@
-﻿using Dalamud.Configuration;
+﻿using Dalamud.AFKPatcherConfig;
 using Dalamud.Plugin;
 using System;
 
-namespace SamplePlugin
+namespace AFKPatcher
 {
     [Serializable]
-    public class Configuration : IPluginConfiguration
+    public class AFKPatcherConfig : IPluginConfiguration
     {
         public int Version { get; set; } = 0;
 
